@@ -1,0 +1,241 @@
+::-webkit-scrollbar {
+    display: none;
+}
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Thin.ttf);
+}
+@font-face {
+    font-family: Questrial;
+    src: url(../fonts/Questrial.otf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Light.otf);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.full-h{
+    height: 100%;
+}
+
+body {
+    background-color: #fff;
+    color: #5f5f5f;
+}
+
+a, a:hover{
+    text-decoration: none;
+    font-family: Questrial;
+    font-size: small;
+}
+
+.login-sec{
+    background-color: #153A62;
+     width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#main-menu{
+    margin-top: 25px;
+}
+
+form.search{
+    padding-top: 10px;
+}
+
+form .glyphicon-search{
+    position: absolute;
+    font-size: 17px;
+    left: 10px;
+    top: 12px;
+}
+form input{
+    padding-left: 35px !important;
+}
+
+form .item.search{
+    position: relative;
+}
+
+form .item.search input, .form-group input, .form-group button{
+    border-radius: 0px !important;
+    width: 210px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.form-group input, .form-group button{
+    width: 100%;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff !important;
+    letter-spacing: 1px;
+}
+
+.navbar-default{
+    background: transparent;
+    border: none;
+}
+
+.navbar-brand {
+    line-height: 90px;
+}
+
+.navbar-brand>img {
+    display: block;
+    height: 20px;
+}
+
+.menu-list{
+    margin-left: 15px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+    background: transparent;
+    color: #fff !important;
+}
+
+.login-form-sec{
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+        -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+        display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: block;
+}
+
+.flex-justify {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.flex-center{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.flex-column{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.login-form form{
+    margin: 25px 0;
+}
+
+.login-form{
+    background: #fff;
+    margin: auto;
+    float: none;
+    padding: 35px;
+}
+.login-form span{
+    display: block;
+}
+
+.login-form header{
+    border-bottom: 1px solid #f0ecec;
+    padding: 10px 0;
+}
+
+.sub-text{
+    font-size: 12.5px;
+    font-family: Lato;
+    color: gray;
+    margin-top: 10px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+input:-webkit-autofill, input, input:focus{
+    background: #fff !important;
+}
+
+.btn-primary:disabled:hover {
+    background: #10ADE4;
+    opacity: .6;
+}
+
+.btn-primary{
+    margin-top: 5px;
+}
+
+.btn-primary, .btn-primary:hover {
+    background: #0e9bcc;
+    color: white;
+}
+h3{
+    margin: 0 0 10px 0;
+}
+h3, label{
+    font-family: Montserrat;    
+}
+@media (max-width: 767px){
+    .login-sec .container-fluid{
+        padding: 0;
+    }
+    .navbar.navbar-default{
+        height: 80px;
+        z-index: 10;
+    }
+    #main-menu{
+        background: #153A62;
+    }
+    #navbar{
+        padding: 0;
+        overflow: hidden;
+    }
+    form .item.search {
+        position: relative;
+        left: 45px;
+        display: inline-block;
+    }
+    .copyRights {
+        position: relative;
+        padding: 10px;
+        color: #ddd;
+        margin-top: 20px;
+    }
+}
+@media (min-width: 768px){
+    .copyRights {
+        position: absolute;
+        bottom: 10px;
+        opacity: 0.8;
+        right: 40px;
+        color: #ddd;
+    }
+    .navbar.navbar-default{
+        height: 90px;
+    }
+}
